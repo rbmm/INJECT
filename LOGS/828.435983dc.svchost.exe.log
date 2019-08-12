@@ -1,0 +1,52 @@
+DLL_PROCESS_ATTACH
+1 00007FFD70340000 C:\Windows\System32\KERNELBASE.dll
+1 00007FFD730B0000 C:\Windows\System32\KERNEL32.DLL
+1 00007FFD72E20000 C:\Windows\System32\RPCRT4.dll
+1 00007FFD70920000 C:\Windows\System32\sechost.dll
+1 00007FFD70750000 C:\Windows\System32\ucrtbase.dll
+1 00007FF7F6FA0000 C:\Windows\system32\svchost.exe
+1 00007FFD6FA00000 C:\Windows\System32\bcryptPrimitives.dll
+1 00007FFD70A70000 C:\Windows\System32\combase.dll
+1 00007FFD70850000 C:\Windows\System32\msvcrt.dll
+1 00007FFD6F6F0000 C:\Windows\System32\kernel.appcore.dll
+1 00007FFD70320000 C:\Windows\System32\win32u.dll
+1 00007FFD6FB30000 C:\Windows\System32\msvcp_win.dll
+1 00007FFD705B0000 C:\Windows\System32\gdi32full.dll
+1 00007FFD708F0000 C:\Windows\System32\GDI32.dll
+1 00007FFD731C0000 C:\Windows\System32\user32.dll
+1 00007FFD710C0000 C:\Windows\System32\SHCORE.dll
+1 00007FFD69760000 c:\windows\system32\StateRepository.Core.dll
+1 00007FFD72B80000 C:\Windows\System32\OLEAUT32.dll
+1 00007FFD715C0000 C:\Windows\System32\advapi32.dll
+1 00007FFD6A870000 c:\windows\system32\FLTLIB.DLL
+1 00007FFD6E4E0000 c:\windows\system32\mintdh.dll
+1 00007FFD6E5E0000 C:\Windows\SYSTEM32\tdh.dll
+1 00007FFD6F6D0000 C:\Windows\System32\profapi.dll
+1 00007FFD6F5C0000 c:\windows\system32\USERENV.dll
+1 00007FFD64D20000 c:\windows\system32\AppXDeploymentClient.dll
+1 00007FFD63BE0000 c:\windows\system32\mrmdeploy.dll
+1 00007FFD6F710000 C:\Windows\System32\MSASN1.dll
+1 00007FFD6F7E0000 C:\Windows\System32\CRYPT32.dll
+1 00007FFD6E800000 c:\windows\system32\NTMARTA.dll
+1 00007FFD63E90000 c:\windows\system32\appxdeploymentserver.dll
+1 00007FFD6F1C0000 C:\Windows\system32\bcrypt.dll
+1 00007FFD6A9C0000 C:\Windows\SYSTEM32\wevtapi.dll
+1 00007FFD6D880000 C:\Windows\SYSTEM32\wer.dll
+1 00007FFD6F780000 C:\Windows\System32\WINTRUST.dll
+1 00007FFD6E6F0000 C:\Windows\SYSTEM32\WLDP.DLL
+1 00007FFD6A7C0000 C:\Windows\SYSTEM32\wtsapi32.dll
+1 00007FFD6F4C0000 C:\Windows\system32\WINSTA.dll
+KERNELBASE.dll(00007FFD70340000):800703f0 at 00007FFD70353FB8 []
+KERNELBASE.dll(00007FFD70340000):80070002 at 00007FFD70353FB8 []
+2 00007FFD63E90000 c:\windows\system32\appxdeploymentserver.dll
+2 00007FFD710C0000 C:\Windows\System32\SHCORE.dll
+2 00007FFD6A870000 c:\windows\system32\FLTLIB.DLL
+2 00007FFD6E5E0000 C:\Windows\SYSTEM32\tdh.dll
+2 00007FFD6F5C0000 c:\windows\system32\USERENV.dll
+2 00007FFD6F6D0000 C:\Windows\System32\profapi.dll
+2 00007FFD63BE0000 c:\windows\system32\mrmdeploy.dll
+2 00007FFD64D20000 c:\windows\system32\AppXDeploymentClient.dll
+2 00007FFD69760000 c:\windows\system32\StateRepository.Core.dll
+2 00007FFD6E800000 c:\windows\system32\NTMARTA.dll
+2 00007FFD6E4E0000 c:\windows\system32\mintdh.dll
+DLL_PROCESS_DETACH

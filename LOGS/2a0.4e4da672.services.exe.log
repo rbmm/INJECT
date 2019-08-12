@@ -1,0 +1,24 @@
+DLL_PROCESS_ATTACH
+1 00007FFD70340000 C:\Windows\System32\KERNELBASE.dll
+1 00007FFD730B0000 C:\Windows\System32\KERNEL32.DLL
+1 00007FFD72E20000 C:\Windows\System32\RPCRT4.dll
+1 00007FFD70750000 C:\Windows\System32\ucrtbase.dll
+1 00007FFD70920000 C:\Windows\System32\sechost.dll
+1 00007FFD6F4A0000 C:\Windows\SYSTEM32\EventAggregation.dll
+1 00007FFD6F9B0000 C:\Windows\System32\cfgmgr32.dll
+1 00007FFD6F470000 C:\Windows\SYSTEM32\DEVOBJ.dll
+1 00007FF6EBD00000 C:\Windows\system32\services.exe
+1 00007FFD70850000 C:\Windows\System32\msvcrt.dll
+1 00007FFD6E940000 C:\Windows\SYSTEM32\scesrv.dll
+1 00007FFD6F5F0000 C:\Windows\system32\sspicli.dll
+1 00007FFD6E8F0000 C:\Windows\system32\AUTHZ.dll
+1 00007FFD715C0000 C:\Windows\System32\advapi32.dll
+1 00007FFD6E870000 C:\Windows\SYSTEM32\WUDFPlatform.dll
+1 00007FFD6F6D0000 C:\Windows\System32\profapi.dll
+1 00007FFD6FA00000 C:\Windows\System32\bcryptPrimitives.dll
+1 00007FFD6C1F0000 C:\Windows\SYSTEM32\DABAPI.dll
+1 00007FFD66AE0000 C:\Windows\SYSTEM32\spinf.dll
+1 00007FFD70EF0000 C:\Windows\System32\WS2_32.dll
+1 00007FFD6EEF0000 C:\Windows\system32\mswsock.dll
+1 00007FFD6BA90000 C:\Windows\SYSTEM32\usermgrcli.dll
+1 00007FFD61850000 C:\Windows\SYSTEM32\srvcli.dll

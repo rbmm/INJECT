@@ -1,0 +1,32 @@
+DLL_PROCESS_ATTACH
+1 00007FFD70340000 C:\Windows\System32\KERNELBASE.dll
+1 00007FFD730B0000 C:\Windows\System32\KERNEL32.DLL
+1 00007FFD70850000 C:\Windows\System32\msvcrt.dll
+1 00007FFD6F1C0000 C:\Windows\SYSTEM32\bcrypt.dll
+1 00007FFD72E20000 C:\Windows\System32\RPCRT4.dll
+1 00007FFD70EF0000 C:\Windows\System32\WS2_32.dll
+1 00007FFD70920000 C:\Windows\System32\sechost.dll
+1 00007FFD68EA0000 C:\Windows\SYSTEM32\wbemcomn.dll
+1 00007FFD70750000 C:\Windows\System32\ucrtbase.dll
+1 00007FFD6FA00000 C:\Windows\System32\bcryptPrimitives.dll
+1 00007FFD70A70000 C:\Windows\System32\combase.dll
+1 00007FF6ADC20000 \\?\C:\Windows\system32\wbem\WMIADAP.EXE
+1 00007FFD70320000 C:\Windows\System32\win32u.dll
+1 00007FFD6FB30000 C:\Windows\System32\msvcp_win.dll
+1 00007FFD705B0000 C:\Windows\System32\gdi32full.dll
+1 00007FFD708F0000 C:\Windows\System32\GDI32.dll
+1 00007FFD731C0000 C:\Windows\System32\user32.dll
+1 00007FFD6F6F0000 C:\Windows\System32\kernel.appcore.dll
+1 00007FFD72AE0000 C:\Windows\System32\clbcatq.dll
+1 00007FFD66920000 C:\Windows\system32\wbem\wbemprox.dll
+1 00007FFD72B80000 C:\Windows\System32\OLEAUT32.dll
+1 00007FFD63B00000 C:\Windows\system32\wbem\wbemsvc.dll
+1 00007FFD644A0000 C:\Windows\system32\wbem\fastprox.dll
+1 00007FFD710B0000 C:\Windows\System32\PSAPI.DLL
+1 00007FFD58B00000 C:\Windows\SYSTEM32\loadperf.dll
+2 00007FFD710B0000 C:\Windows\System32\PSAPI.DLL
+2 00007FFD58B00000 C:\Windows\SYSTEM32\loadperf.dll
+2 00007FFD63B00000 C:\Windows\system32\wbem\wbemsvc.dll
+2 00007FFD66920000 C:\Windows\system32\wbem\wbemprox.dll
+2 00007FFD644A0000 C:\Windows\system32\wbem\fastprox.dll
+DLL_PROCESS_DETACH

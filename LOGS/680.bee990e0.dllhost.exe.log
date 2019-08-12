@@ -1,0 +1,64 @@
+DLL_PROCESS_ATTACH
+1 00007FFD70340000 C:\Windows\System32\KERNELBASE.dll
+1 00007FFD730B0000 C:\Windows\System32\KERNEL32.DLL
+1 00007FFD70750000 C:\Windows\System32\ucrtbase.dll
+1 00007FFD72E20000 C:\Windows\System32\RPCRT4.dll
+1 00007FFD6FA00000 C:\Windows\System32\bcryptPrimitives.dll
+1 00007FFD70A70000 C:\Windows\System32\combase.dll
+1 00007FF78E2E0000 C:\Windows\system32\dllhost.exe
+1 00007FFD70850000 C:\Windows\System32\msvcrt.dll
+1 00007FFD6F6F0000 C:\Windows\System32\kernel.appcore.dll
+1 00007FFD72AE0000 C:\Windows\System32\clbcatq.dll
+1 00007FFD70320000 C:\Windows\System32\win32u.dll
+1 00007FFD6FB30000 C:\Windows\System32\msvcp_win.dll
+1 00007FFD705B0000 C:\Windows\System32\gdi32full.dll
+1 00007FFD708F0000 C:\Windows\System32\GDI32.dll
+1 00007FFD731C0000 C:\Windows\System32\user32.dll
+1 00007FFD70920000 C:\Windows\System32\sechost.dll
+1 00007FFD72B80000 C:\Windows\System32\OLEAUT32.dll
+1 00007FFD70F60000 C:\Windows\System32\ole32.dll
+1 00007FFD64B30000 C:\Windows\system32\COMSVCS.DLL
+1 00007FFD6F0C0000 C:\Windows\SYSTEM32\CRYPTSP.dll
+1 00007FFD6F1C0000 C:\Windows\system32\bcrypt.dll
+1 00007FFD6EB00000 C:\Windows\system32\rsaenh.dll
+1 00007FFD6F0B0000 C:\Windows\system32\CRYPTBASE.dll
+1 00007FFD6F710000 C:\Windows\System32\MSASN1.dll
+1 00007FFD6F7E0000 C:\Windows\System32\CRYPT32.dll
+1 00007FFD715C0000 C:\Windows\System32\ADVAPI32.dll
+1 00007FFD6EB40000 C:\Windows\SYSTEM32\DPAPI.DLL
+1 00007FFD63B20000 C:\Windows\SYSTEM32\ODBC32.dll
+1 00007FFD6AAC0000 C:\Windows\system32\es.dll
+1 0000000067C00000 C:\Windows\WinSxS\amd64_microsoft.vc90.crt_1fc8b3b9a1e18e3b_9.0.30729.9317_none_08e0939fa840d57b\MSVCR90.dll
+1 00007FFD66DA0000 C:\Windows\SYSTEM32\VssTrace.DLL
+1 00007FFD70EF0000 C:\Windows\System32\WS2_32.dll
+1 00007FFD66DC0000 C:\Windows\SYSTEM32\VSSAPI.DLL
+1 0000000067B20000 C:\Windows\WinSxS\amd64_microsoft.vc90.crt_1fc8b3b9a1e18e3b_9.0.30729.9317_none_08e0939fa840d57b\MSVCP90.dll
+1 00007FFD61CD0000 C:\Program Files\Common Files\VMware\Drivers\vss\VCBSnapshotProvider.dll
+1 00007FFD694B0000 C:\Program Files\VMware\VMware Tools\iconv.dll
+1 00007FFD696D0000 C:\Program Files\VMware\VMware Tools\intl.dll
+1 00007FFD69460000 C:\Program Files\VMware\VMware Tools\pcre.dll
+1 00007FFD6F9B0000 C:\Windows\System32\cfgmgr32.dll
+1 00007FFD6D640000 C:\Windows\system32\WINMMBASE.dll
+1 00007FFD6D6A0000 C:\Windows\system32\WINMM.dll
+1 00007FFD710C0000 C:\Windows\System32\shcore.dll
+1 00007FFD70A10000 C:\Windows\System32\shlwapi.dll
+1 00007FFD6F730000 C:\Windows\System32\powrprof.dll
+1 00007FFD6F6D0000 C:\Windows\System32\profapi.dll
+1 00007FFD6FBD0000 C:\Windows\System32\windows.storage.dll
+1 00007FFD716A0000 C:\Windows\System32\SHELL32.dll
+1 0000000180000000 C:\Program Files\VMware\VMware Tools\glib-2.0.dll
+1 000001CFB0650000 C:\Program Files\VMware\VMware Tools\gthread-2.0.dll
+1 00007FFD695A0000 C:\Program Files\VMware\VMware Tools\vmtools.dll
+1 000001CFB0680000 C:\Windows\system32\icmp.dll
+2 000001CFB0680000 C:\Windows\system32\icmp.dll
+1 00007FFD6EC80000 C:\Windows\system32\IpHlpApi.dll
+1 00007FFD6F5F0000 C:\Windows\SYSTEM32\SspiCli.dll
+1 00007FFD6F520000 C:\Windows\SYSTEM32\sxs.dll
+1 00007FFD618A0000 C:\Windows\system32\vss_ps.dll
+2 000001CFB0650000 C:\Program Files\VMware\VMware Tools\gthread-2.0.dll
+2 00007FFD61CD0000 C:\Program Files\Common Files\VMware\Drivers\vss\VCBSnapshotProvider.dll
+2 00007FFD66DC0000 C:\Windows\SYSTEM32\VSSAPI.DLL
+2 00007FFD66DA0000 C:\Windows\SYSTEM32\VssTrace.DLL
+2 0000000067B20000 C:\Windows\WinSxS\amd64_microsoft.vc90.crt_1fc8b3b9a1e18e3b_9.0.30729.9317_none_08e0939fa840d57b\MSVCP90.dll
+2 00007FFD6AAC0000 C:\Windows\system32\es.dll
+2 00007FFD618A0000 C:\Windows\system32\vss_ps.dll

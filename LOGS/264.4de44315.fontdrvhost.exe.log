@@ -1,0 +1,14 @@
+DLL_PROCESS_ATTACH
+1 00007FFD70340000 C:\Windows\System32\KERNELBASE.dll
+1 00007FFD730B0000 C:\Windows\System32\KERNEL32.DLL
+1 00007FFD70750000 C:\Windows\System32\ucrtbase.dll
+1 00007FFD6FB30000 C:\Windows\System32\msvcp_win.dll
+1 00007FFD70320000 C:\Windows\System32\win32u.dll
+1 00007FFD731C0000 C:\Windows\System32\USER32.dll
+1 00007FFD705B0000 C:\Windows\System32\gdi32full.dll
+1 00007FFD708F0000 C:\Windows\System32\GDI32.dll
+1 00007FF793600000 C:\Windows\system32\fontdrvhost.exe
+1 00007FFD72E20000 C:\Windows\System32\RPCRT4.dll
+1 00007FFD6FA00000 C:\Windows\System32\bcryptPrimitives.dll
+1 00007FFD70A70000 C:\Windows\System32\combase.dll
+1 00007FFD72C50000 C:\Windows\System32\IMM32.DLL

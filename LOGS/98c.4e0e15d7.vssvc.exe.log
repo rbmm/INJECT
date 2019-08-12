@@ -1,0 +1,43 @@
+DLL_PROCESS_ATTACH
+1 00007FFD70340000 C:\Windows\System32\KERNELBASE.dll
+1 00007FFD730B0000 C:\Windows\System32\KERNEL32.DLL
+1 00007FFD70850000 C:\Windows\System32\msvcrt.dll
+1 00007FFD70750000 C:\Windows\System32\ucrtbase.dll
+1 00007FFD6FB30000 C:\Windows\System32\msvcp_win.dll
+1 00007FFD72E20000 C:\Windows\System32\RPCRT4.dll
+1 00007FFD6FA00000 C:\Windows\System32\bcryptPrimitives.dll
+1 00007FFD70A70000 C:\Windows\System32\combase.dll
+1 00007FFD72B80000 C:\Windows\System32\OLEAUT32.dll
+1 00007FFD70920000 C:\Windows\System32\sechost.dll
+1 00007FFD715C0000 C:\Windows\System32\advapi32.dll
+1 00007FFD66DA0000 C:\Windows\system32\VssTrace.DLL
+1 00007FFD70EF0000 C:\Windows\System32\WS2_32.dll
+1 00007FFD66DC0000 C:\Windows\system32\VSSAPI.DLL
+1 00007FFD6F9B0000 C:\Windows\System32\cfgmgr32.dll
+1 00007FFD6F470000 C:\Windows\system32\DEVOBJ.dll
+1 00007FFD6E8F0000 C:\Windows\system32\AUTHZ.dll
+1 00007FFD6A870000 C:\Windows\system32\FLTLIB.DLL
+1 00007FFD61BE0000 C:\Windows\system32\VirtDisk.dll
+1 00007FFD61C00000 C:\Windows\system32\bcd.dll
+1 00007FF7AC2B0000 C:\Windows\system32\vssvc.exe
+1 00007FFD6F6F0000 C:\Windows\System32\kernel.appcore.dll
+1 00007FFD70320000 C:\Windows\System32\win32u.dll
+1 00007FFD705B0000 C:\Windows\System32\gdi32full.dll
+1 00007FFD708F0000 C:\Windows\System32\GDI32.dll
+1 00007FFD731C0000 C:\Windows\System32\user32.dll
+1 00007FFD72AE0000 C:\Windows\System32\clbcatq.dll
+1 00007FFD6AAC0000 C:\Windows\System32\ES.DLL
+1 00007FFD6A800000 C:\Windows\system32\samcli.dll
+1 00007FFD6ED80000 C:\Windows\system32\netutils.dll
+1 00007FFD6C220000 C:\Windows\system32\SAMLIB.dll
+1 00007FFD618A0000 C:\Windows\system32\vss_ps.dll
+KERNELBASE.dll(00007FFD70340000):e06d7363 at 00007FFD70353FB8 [ 0000000019930520 000000E5AACFD430 00007FF7AC41C800 00007FF7AC2B0000]
+1 00007FFD710C0000 C:\Windows\System32\shcore.dll
+1 00007FFD6E150000 C:\Windows\System32\PROPSYS.dll
+1 00007FFD61890000 C:\Windows\system32\MfcSubs.dll
+1 00007FFD617D0000 C:\Windows\system32\catsrvut.dll
+2 00007FFD617D0000 C:\Windows\system32\catsrvut.dll
+2 00007FFD61890000 C:\Windows\system32\MfcSubs.dll
+2 00007FFD6AAC0000 C:\Windows\System32\ES.DLL
+2 00007FFD618A0000 C:\Windows\system32\vss_ps.dll
+DLL_PROCESS_DETACH

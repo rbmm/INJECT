@@ -1,0 +1,105 @@
+DLL_PROCESS_ATTACH
+1 00007FFD70340000 C:\Windows\System32\KERNELBASE.dll
+1 00007FFD730B0000 C:\Windows\System32\KERNEL32.DLL
+1 00007FFD70850000 C:\Windows\System32\msvcrt.dll
+1 00007FFD72E20000 C:\Windows\System32\RPCRT4.dll
+1 00007FFD70920000 C:\Windows\System32\sechost.dll
+1 00007FFD715C0000 C:\Windows\System32\ADVAPI32.dll
+1 00007FFD70750000 C:\Windows\System32\ucrtbase.dll
+1 00007FFD6FA00000 C:\Windows\System32\bcryptPrimitives.dll
+1 00007FFD70A70000 C:\Windows\System32\combase.dll
+1 00007FFD6FB30000 C:\Windows\System32\msvcp_win.dll
+1 00007FFD70320000 C:\Windows\System32\win32u.dll
+1 00007FFD731C0000 C:\Windows\System32\USER32.dll
+1 00007FFD705B0000 C:\Windows\System32\gdi32full.dll
+1 00007FFD708F0000 C:\Windows\System32\GDI32.dll
+1 00007FFD70F60000 C:\Windows\System32\ole32.dll
+1 00007FFD69DF0000 C:\Windows\SYSTEM32\VERSION.dll
+1 0000000067C00000 C:\Windows\WinSxS\amd64_microsoft.vc90.crt_1fc8b3b9a1e18e3b_9.0.30729.9317_none_08e0939fa840d57b\MSVCR90.dll
+1 00007FFD694B0000 C:\Program Files\VMware\VMware Tools\iconv.dll
+1 00007FFD696D0000 C:\Program Files\VMware\VMware Tools\intl.dll
+1 00007FFD70EF0000 C:\Windows\System32\WS2_32.dll
+1 00007FFD6F9B0000 C:\Windows\System32\cfgmgr32.dll
+1 00007FFD6D640000 C:\Windows\SYSTEM32\WINMMBASE.dll
+1 00007FFD6D6A0000 C:\Windows\SYSTEM32\WINMM.dll
+1 00007FFD69460000 C:\Program Files\VMware\VMware Tools\pcre.dll
+1 00007FFD710C0000 C:\Windows\System32\shcore.dll
+1 00007FFD70A10000 C:\Windows\System32\shlwapi.dll
+1 00007FFD6F6F0000 C:\Windows\System32\kernel.appcore.dll
+1 00007FFD6F730000 C:\Windows\System32\powrprof.dll
+1 00007FFD6F6D0000 C:\Windows\System32\profapi.dll
+1 00007FFD6FBD0000 C:\Windows\System32\windows.storage.dll
+1 00007FFD716A0000 C:\Windows\System32\SHELL32.dll
+1 0000000180000000 C:\Program Files\VMware\VMware Tools\glib-2.0.dll
+1 0000000002B00000 C:\Program Files\VMware\VMware Tools\gmodule-2.0.dll
+1 0000000002E70000 C:\Program Files\VMware\VMware Tools\gobject-2.0.dll
+1 00007FFD72B80000 C:\Windows\System32\OLEAUT32.dll
+1 00007FFD6F710000 C:\Windows\System32\MSASN1.dll
+1 00007FFD6F7E0000 C:\Windows\System32\CRYPT32.dll
+1 00007FFD695A0000 C:\Program Files\VMware\VMware Tools\vmtools.dll
+1 00007FF6A60A0000 C:\Program Files\VMware\VMware Tools\vmtoolsd.exe
+1 0000000002B50000 C:\Windows\SYSTEM32\icmp.dll
+2 0000000002B50000 C:\Windows\SYSTEM32\icmp.dll
+1 00007FFD6EC80000 C:\Windows\SYSTEM32\IpHlpApi.dll
+1 00007FFD6F5F0000 C:\Windows\SYSTEM32\SspiCli.dll
+1 00007FFD6E800000 C:\Windows\SYSTEM32\ntmarta.dll
+1 00007FFD66A50000 C:\Windows\system32\vsocklib.dll
+1 00007FFD66970000 C:\Windows\SYSTEM32\MPR.dll
+1 00007FFD66990000 C:\Program Files\VMware\VMware Tools\hgfs.dll
+1 00007FFD669C0000 C:\Program Files\VMware\VMware Tools\plugins\common\hgfsServer.dll
+1 00007FFD6F5C0000 C:\Windows\SYSTEM32\USERENV.dll
+1 00007FFD66930000 C:\Program Files\VMware\VMware Tools\plugins\common\hgfsUsability.dll
+1 00007FFD66920000 C:\Program Files\VMware\VMware Tools\plugins\common\thinprint.dll
+1 00007FFD66810000 C:\Windows\SYSTEM32\Secur32.dll
+1 00007FFD66820000 C:\Program Files\VMware\VMware Tools\plugins\common\vix.dll
+1 0000000067B20000 C:\Windows\WinSxS\amd64_microsoft.vc90.crt_1fc8b3b9a1e18e3b_9.0.30729.9317_none_08e0939fa840d57b\MSVCP90.dll
+1 00007FFD66760000 C:\Program Files\VMware\VMware Tools\plugins\vmsvc\autoLogon.dll
+1 00007FFD6A7C0000 C:\Windows\SYSTEM32\WTSAPI32.dll
+1 00007FFD666F0000 C:\Program Files\VMware\VMware Tools\plugins\vmsvc\autoUpgrade.dll
+1 00007FFD66640000 C:\Program Files\VMware\VMware Tools\plugins\vmsvc\bitMapper.dll
+1 00007FFD664D0000 C:\Program Files\VMware\VMware Tools\deployPkg.dll
+1 00007FFD66630000 C:\Program Files\VMware\VMware Tools\plugins\vmsvc\deployPkgPlugin.dll
+1 00007FFD66210000 C:\Program Files\VMware\VMware Tools\plugins\vmsvc\disableGuestHibernate.dll
+1 00007FFD661A0000 C:\Program Files\VMware\VMware Tools\plugins\vmsvc\diskWiper.dll
+1 00007FFD66120000 C:\Program Files\VMware\VMware Tools\plugins\vmsvc\grabbitmqProxy.dll
+1 00007FFD661C0000 C:\Program Files\VMware\VMware Tools\plugins\vmsvc\guestInfo.dll
+1 0000000003D40000 C:\Program Files\VMware\VMware Tools\gthread-2.0.dll
+1 00007FFD71170000 C:\Windows\System32\SETUPAPI.dll
+1 00007FFD66030000 C:\Program Files\VMware\VMware Tools\plugins\vmsvc\hwUpgradeHelper.dll
+1 00007FFD65D40000 C:\Program Files\VMware\VMware Tools\plugins\vmsvc\powerOps.dll
+1 00007FFD710B0000 C:\Windows\System32\PSAPI.DLL
+1 00007FFD65CE0000 C:\Program Files\VMware\VMware Tools\plugins\vmsvc\resolutionSet.dll
+1 00007FFD65CD0000 C:\Program Files\VMware\VMware Tools\plugins\vmsvc\timeSync.dll
+1 00007FFD65CC0000 C:\Program Files\VMware\VMware Tools\plugins\vmsvc\vmbackup.dll
+2 00007FFD66920000 C:\Program Files\VMware\VMware Tools\plugins\common\thinprint.dll
+2 00007FFD66210000 C:\Program Files\VMware\VMware Tools\plugins\vmsvc\disableGuestHibernate.dll
+1 00000000678D0000 C:\Program Files\VMware\VMware Tools\libeay32.dll
+1 00007FFD65840000 C:\Program Files\VMware\VMware Tools\ssleay32.dll
+1 00007FFD6F0C0000 C:\Windows\SYSTEM32\CRYPTSP.dll
+1 00007FFD6F1C0000 C:\Windows\SYSTEM32\bcrypt.dll
+1 00007FFD6EB00000 C:\Windows\system32\rsaenh.dll
+1 00007FFD6F0B0000 C:\Windows\SYSTEM32\CRYPTBASE.dll
+1 0000000003DA0000 C:\Windows\SYSTEM32\icmp.dll
+2 0000000003DA0000 C:\Windows\SYSTEM32\icmp.dll
+KERNELBASE.dll(00007FFD70340000):e06d7363 at 00007FFD70353FB8 [ 0000000019930520 0000000003C2F988 00007FFD6604BC58 00007FFD66030000]
+KERNELBASE.dll(00007FFD70340000):e06d7363 at 00007FFD70353FB8 [ 0000000019930520 0000000003C2F988 00007FFD6604BC58 00007FFD66030000]
+1 00007FFD72AE0000 C:\Windows\System32\clbcatq.dll
+1 00007FFD68EA0000 C:\Windows\SYSTEM32\wbemcomn.dll
+1 00007FFD66920000 C:\Windows\system32\wbem\wbemprox.dll
+1 00007FFD71670000 C:\Windows\System32\NSI.dll
+1 00007FFD69E10000 C:\Windows\SYSTEM32\dhcpcsvc6.DLL
+1 00007FFD69CF0000 C:\Windows\SYSTEM32\dhcpcsvc.DLL
+1 00007FFD6EEF0000 C:\Windows\system32\mswsock.dll
+1 00007FFD65560000 C:\Windows\system32\wshqos.dll
+1 00007FFD654A0000 C:\Windows\SYSTEM32\wshtcpip.DLL
+1 00007FFD65450000 C:\Windows\SYSTEM32\wship6.dll
+1 00007FFD63B00000 C:\Windows\system32\wbem\wbemsvc.dll
+1 00007FFD644A0000 C:\Windows\system32\wbem\fastprox.dll
+1 00007FFD64B30000 C:\Windows\System32\comsvcs.dll
+1 00007FFD6F520000 C:\Windows\SYSTEM32\sxs.dll
+1 00007FFD63850000 C:\Windows\system32\wbem\wmiutils.dll
+1 00007FFD6B790000 C:\Windows\SYSTEM32\pdh.dll
+1 00007FFD55BB0000 C:\Windows\System32\wbem\WmiPerfInst.dll
+1 00007FFD6ECC0000 C:\Windows\SYSTEM32\DNSAPI.dll
+1 00007FFD6A380000 C:\Windows\SYSTEM32\WINNSI.DLL
+1 00007FFD55E40000 C:\Windows\System32\perfos.dll
