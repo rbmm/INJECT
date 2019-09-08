@@ -6,6 +6,7 @@ extern "C"
 	extern const UINT_PTR __security_cookie = 0;
 }
 #include "log.h"
+//#include "detour.h"
 
 void OnDllLoad(PVOID hmod, PCUNICODE_STRING DllName);
 
@@ -16,8 +17,12 @@ VOID CALLBACK LdrDllNotification(
 								 )
 {
 	DbgPrint("%x %p %wZ\r\n", NotificationReason, NotificationData->DllBase, NotificationData->FullDllName);
+	
+	//if (NotificationReason == LDR_DLL_NOTIFICATION_REASON_LOADED)
+	//{
+	//	OnDllLoad(NotificationData->DllBase, NotificationData->BaseDllName);
+	//}
 }
-
 
 LONG
 WINAPI
@@ -87,9 +92,40 @@ UnhandledExceptionFilter(::PEXCEPTION_POINTERS ExceptionInfo)
 	return EXCEPTION_CONTINUE_SEARCH;
 }
 
-BOOLEAN WINAPI DllMain( HMODULE /*hmod*/, DWORD ul_reason_for_call, PVOID )
+NTDLL RtlGetActiveActivationContext(HANDLE * phActCtx);
+NTDLL RtlActivateActivationContext( ULONG flags, HANDLE hActCtx, PULONG_PTR cookie );
+NTDLL RtlDeactivateActivationContext( ULONG flags, ULONG_PTR cookie );
+NTDLL_(VOID) RtlReleaseActivationContext( HANDLE hActCtx );
+NTDLL_(VOID) RtlAddRefActivationContext(HANDLE hActCtx);
+NTDLL_(VOID) RtlReleaseActivationContext(HANDLE hActCtx);
+
+#define USER_SHARED_DATA ((PKUSER_SHARED_DATA)0x7ffe0000)
+
+ULONG WINAPI MBT(HANDLE hActCtx)
+{
+	ULONG_PTR cookie;
+	if (0 <= RtlActivateActivationContext( 0, hActCtx, &cookie ))
+	{
+		MessageBoxW(HWND_DESKTOP, L"*", L"Demo", MB_ICONINFORMATION|MB_OK);
+		RtlDeactivateActivationContext(0, cookie);
+	}
+
+	FreeLibraryAndExitThread((HMODULE)&__ImageBase, 0);
+}
+
+extern "C" void WINAPI UserNormalRoutine(void*, void*, void*);
+
+BOOLEAN WINAPI DllMain( HMODULE hmod, DWORD ul_reason_for_call, HANDLE hActCtx )
 {
 	static PVOID gCookie, gVex;
+	//NTSTATUS status;
+
+	if (!hmod)
+	{
+		// for mark UserNormalRoutine as valid CFG target
+		ZwQueueApcThread(0, UserNormalRoutine, 0, 0, 0);
+		// never executed
+	}
 
 	switch (ul_reason_for_call)
 	{
@@ -98,7 +134,45 @@ BOOLEAN WINAPI DllMain( HMODULE /*hmod*/, DWORD ul_reason_for_call, PVOID )
 		DbgPrint("DLL_PROCESS_ATTACH\r\n");
 
 		gVex = RtlAddVectoredExceptionHandler(TRUE, UnhandledExceptionFilter);
-		LdrRegisterDllNotification(0, LdrDllNotification, 0, &gCookie);
+
+		//RtlGetCurrentPeb()->BeingDebugged = FALSE;
+#ifndef _WIN64
+		{
+			PVOID peb64;
+			if (0 <= ZwQueryInformationProcess(NtCurrentProcess(), ProcessWow64Information, &peb64, sizeof(peb64), 0))
+			{
+				if (peb64)
+				{
+					((_PEB*)peb64)->BeingDebugged = FALSE;
+				}
+			}
+		}
+#endif
+
+		//if (0 > (status = TrInit(PAGE_SIZE)))
+		//{
+		//	DbgPrint("TrInit()=%x\r\n", status);
+		//}
+		//else
+		{
+			LdrRegisterDllNotification(0, LdrDllNotification, 0, &gCookie);
+			//LdrEnumerateLoadedModules(0, EnumModules, 0);
+		}
+
+		if (0 <= RtlGetActiveActivationContext(&hActCtx))
+		{
+			if (0 <= LdrAddRefDll(0, hmod))
+			{
+				if (HANDLE hThread = CreateThread(0, 0, MBT, hActCtx, 0, 0))
+				{
+					CloseHandle(hThread);
+					break;
+				}
+				LdrUnloadDll(hmod);
+			}
+			RtlReleaseActivationContext(hActCtx);
+		}
+
 		break;
 
 	case DLL_PROCESS_DETACH:
@@ -108,6 +182,7 @@ BOOLEAN WINAPI DllMain( HMODULE /*hmod*/, DWORD ul_reason_for_call, PVOID )
 		{
 			RtlRemoveVectoredExceptionHandler(gVex);
 		}
+		//if (hActCtx) RtlReleaseActivationContext(hActCtx);
 		DbgPrint("DLL_PROCESS_DETACH\r\n");
 		Log::Close();
 		break;
