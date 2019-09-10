@@ -92,27 +92,6 @@ UnhandledExceptionFilter(::PEXCEPTION_POINTERS ExceptionInfo)
 	return EXCEPTION_CONTINUE_SEARCH;
 }
 
-NTDLL RtlGetActiveActivationContext(HANDLE * phActCtx);
-NTDLL RtlActivateActivationContext( ULONG flags, HANDLE hActCtx, PULONG_PTR cookie );
-NTDLL RtlDeactivateActivationContext( ULONG flags, ULONG_PTR cookie );
-NTDLL_(VOID) RtlReleaseActivationContext( HANDLE hActCtx );
-NTDLL_(VOID) RtlAddRefActivationContext(HANDLE hActCtx);
-NTDLL_(VOID) RtlReleaseActivationContext(HANDLE hActCtx);
-
-#define USER_SHARED_DATA ((PKUSER_SHARED_DATA)0x7ffe0000)
-
-ULONG WINAPI MBT(HANDLE hActCtx)
-{
-	ULONG_PTR cookie;
-	if (0 <= RtlActivateActivationContext( 0, hActCtx, &cookie ))
-	{
-		MessageBoxW(HWND_DESKTOP, L"*", L"Demo", MB_ICONINFORMATION|MB_OK);
-		RtlDeactivateActivationContext(0, cookie);
-	}
-
-	FreeLibraryAndExitThread((HMODULE)&__ImageBase, 0);
-}
-
 extern "C" void WINAPI UserNormalRoutine(void*, void*, void*);
 
 BOOLEAN WINAPI DllMain( HMODULE hmod, DWORD ul_reason_for_call, HANDLE hActCtx )
@@ -157,20 +136,6 @@ BOOLEAN WINAPI DllMain( HMODULE hmod, DWORD ul_reason_for_call, HANDLE hActCtx )
 		{
 			LdrRegisterDllNotification(0, LdrDllNotification, 0, &gCookie);
 			//LdrEnumerateLoadedModules(0, EnumModules, 0);
-		}
-
-		if (0 <= RtlGetActiveActivationContext(&hActCtx))
-		{
-			if (0 <= LdrAddRefDll(0, hmod))
-			{
-				if (HANDLE hThread = CreateThread(0, 0, MBT, hActCtx, 0, 0))
-				{
-					CloseHandle(hThread);
-					break;
-				}
-				LdrUnloadDll(hmod);
-			}
-			RtlReleaseActivationContext(hActCtx);
 		}
 
 		break;
