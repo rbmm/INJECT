@@ -11,7 +11,7 @@ _TEXT SEGMENT
 
 ?RundownRoutine@NT@@YGXPAU_KAPC@1@@Z proc
 		mov eax,[esp]
-		xchg eax,[esp + 4]
+		xchg [esp+1*4],eax
 		mov [esp],eax
 		call ?_RundownRoutine@NT@@YGXPAU_KAPC@1@@Z
 		mov ecx,_g_DriverObject
@@ -20,16 +20,12 @@ _TEXT SEGMENT
 
 ?KernelRoutine@NT@@YGXPAU_KAPC@1@PAP6GXPAX11@ZPAPAX33@Z proc
 		mov eax,[esp]
-		mov edx,[esp + 4 * 1]
-		mov [esp + 4 * 0],edx
-		mov edx,[esp + 4 * 2]
-		mov [esp + 4 * 1],edx
-		mov edx,[esp + 4 * 3]
-		mov [esp + 4 * 2],edx
-		mov edx,[esp + 4 * 4]
-		mov [esp + 4 * 3],edx
-		xchg eax,[esp + 4 * 5]
-		mov [esp + 4 * 4],eax
+		xchg [esp+5*4],eax
+		xchg [esp+4*4],eax
+		xchg [esp+3*4],eax
+		xchg [esp+2*4],eax
+		xchg [esp+1*4],eax
+		mov [esp],eax
 		call ?_KernelRoutine@NT@@YGXPAU_KAPC@1@PAP6GXPAX11@ZPAPAX33@Z
 		mov ecx,_g_DriverObject
 		jmp __imp_@ObfDereferenceObject@4
@@ -37,12 +33,10 @@ _TEXT SEGMENT
 
 ?NormalRoutine@NT@@YGXPAX00@Z proc
 		mov eax,[esp]
-		mov edx,[esp + 4 * 1]
-		mov [esp + 4 * 0],edx
-		mov edx,[esp + 4 * 2]
-		mov [esp + 4 * 1],edx
-		xchg eax,[esp + 4 * 3]
-		mov [esp + 4 * 2],eax
+		xchg [esp+3*4],eax
+		xchg [esp+2*4],eax
+		xchg [esp+1*4],eax
+		mov [esp],eax
 		call ?_NormalRoutine@NT@@YGXPAU_KAPC@1@PAXPAUDLL_INFORMATION@1@@Z
 		mov ecx,_g_DriverObject
 		jmp __imp_@ObfDereferenceObject@4
